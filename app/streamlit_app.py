@@ -17,13 +17,13 @@ st.set_page_config(page_title="Clinical Diabetes Risk Score", page_icon='🩺', 
 
 @st.cache_resource
 def load_artifacts():
-    with open('/src/model.pkl', 'rb') as f:
+    with open('src/model.pkl', 'rb') as f:
         model = pickle.load(f)
-    with open('/src/scaler.pkl', 'rb') as f:
+    with open('src/scaler.pkl', 'rb') as f:
         scaler = pickle.load(f)
-    with open('/src/feature_columns.pkl', 'rb') as f:
+    with open('src/feature_columns.pkl', 'rb') as f:
         feature_columns = pickle.load(f)
-    with open('/src/explainer.pkl', 'rb') as f:
+    with open('src/explainer.pkl', 'rb') as f:
         explainer = pickle.load(f)
     return model, scaler, feature_columns, explainer
 
