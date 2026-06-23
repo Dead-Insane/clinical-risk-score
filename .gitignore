@@ -1,0 +1,13 @@
+# Raw data files (NHANES XPT files + processed CSVs - too large/redundant for GitHub)
+data/*.XPT
+data/nhanes_after_eda.csv
+data/nhanes_preprocessed.csv
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
